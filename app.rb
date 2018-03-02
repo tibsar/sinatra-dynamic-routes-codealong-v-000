@@ -14,7 +14,11 @@ class App < Sinatra::Base
   end
 
   # Code your final two routes here:
-  get "/goodbye" do 
+  get "/goodbye" do
     "Goodbye World!"
+  end
+
+  get "/goodbye/:name" do 
+    binding.pry
   end 
 end
