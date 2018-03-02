@@ -20,6 +20,7 @@ class App < Sinatra::Base
   end
 
   get "/goodbye/:name" do
-    binding.pry
+    @name = params[:name]
+    "Goodbye #{@name}"
   end
 end
