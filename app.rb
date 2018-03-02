@@ -15,7 +15,6 @@ class App < Sinatra::Base
 
   # Code your final two routes here:
   get "/goodbye" do
-    binding.pry
     "Goodbye World!"
   end
 
@@ -24,5 +23,6 @@ class App < Sinatra::Base
     "Goodbye, #{@name}."
   end
 
-  # get "/multiply/"
+  get "/multiply/:num1/:num2/:num3" do 
+  end 
 end
